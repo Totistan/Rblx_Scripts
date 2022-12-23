@@ -1,0 +1,6 @@
+local player = game.Players.LocalPlayer
+local parts = game:GetService("Workspace").PackageGivers:GetChildren()
+
+for _, part in pairs(parts) do
+  part.CFrame = player.Character.Head.CFrame
+end
